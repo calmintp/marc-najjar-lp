@@ -1,0 +1,16 @@
+@extends('layouts.app')
+@section('content')
+<main>
+    @include('partials.navbar')
+    @include('partials.hero')
+    @include('partials.community')
+    @include('partials.book-carousel')
+    @include('partials.success-stories')
+    @include('partials.why-section')
+    @include('partials.features')
+    @include('partials.about')
+    @include('partials.testimonials')
+    @include('partials.subscribe-cta')
+    @include('partials.footer')
+</main>
+@endsection
