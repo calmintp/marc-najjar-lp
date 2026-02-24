@@ -11,7 +11,7 @@
             Connect with Marc across platforms and join thousands who are transforming their mindset daily.
         </p>
 
-        {{-- Social cards - horizontal row like Ed Mylett --}}
+        {{-- Social cards - horizontal row --}}
         <div class="mx-auto grid max-w-5xl grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5 lg:gap-4">
             @php
                 $socials = [
@@ -36,14 +36,14 @@
 
         {{-- CTA action buttons row --}}
         <div class="mt-12 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-            <a href="#books" class="inline-flex items-center justify-center border-2 border-primary/40 bg-transparent px-6 py-3 text-xs font-bold uppercase tracking-[0.15em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:text-sm">
+            <a href="{{ route('books') }}" class="inline-flex items-center justify-center border-2 border-primary/40 bg-transparent px-6 py-3 text-xs font-bold uppercase tracking-[0.15em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:text-sm">
                 Buy Books
             </a>
-            <a href="#subscribe" class="inline-flex items-center justify-center border-2 border-primary/40 bg-transparent px-6 py-3 text-xs font-bold uppercase tracking-[0.15em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:text-sm">
+            <a href="{{ route('book') }}" class="inline-flex items-center justify-center border-2 border-primary/40 bg-transparent px-6 py-3 text-xs font-bold uppercase tracking-[0.15em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:text-sm">
                 Book Marc to Speak
             </a>
-            <a href="#subscribe" class="inline-flex items-center justify-center border-2 border-primary/40 bg-transparent px-6 py-3 text-xs font-bold uppercase tracking-[0.15em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:text-sm">
-                Free mindset guid
+            <a href="{{ route('home') }}#free-guide" class="inline-flex items-center justify-center border-2 border-primary/40 bg-transparent px-6 py-3 text-xs font-bold uppercase tracking-[0.15em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:text-sm">
+                Free mindset guide
             </a>
         </div>
     </div>

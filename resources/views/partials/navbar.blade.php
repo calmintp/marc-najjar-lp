@@ -8,14 +8,14 @@
 
         {{-- Desktop nav --}}
         <ul class="hidden items-center gap-8 md:flex">
-            <li><a href="#books" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Books</a></li>
-            <li><a href="#videos" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Videos</a></li>
-            <li><a href="#about-marc" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">About Marc</a></li>
-            <li><a href="#testimonials" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Testimonials</a></li>
+            <li><a href="{{ route('books') }}" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Books</a></li>
+            <li><a href="{{ route('videos') }}" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Videos</a></li>
+            <li><a href="{{ route('book') }}" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Book Marc</a></li>
+            <li><a href="{{ route('home') }}#free-guide" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Free Guide</a></li>
         </ul>
 
         <div class="hidden md:block">
-            <a href="#subscribe" class="inline-flex items-center justify-center bg-primary px-6 py-2.5 text-xs font-bold uppercase tracking-[0.15em] text-primary-foreground transition-colors hover:bg-gold-light">Subscribe</a>
+            <a href="{{ route('home') }}#free-guide" class="inline-flex items-center justify-center bg-primary px-6 py-2.5 text-xs font-bold uppercase tracking-[0.15em] text-primary-foreground transition-colors hover:bg-gold-light">Get Guide</a>
         </div>
 
         {{-- Mobile toggle --}}
@@ -28,11 +28,11 @@
     {{-- Mobile menu --}}
     <div x-show="mobileOpen" x-cloak x-transition class="border-t border-border/20 bg-background px-6 pb-6 md:hidden">
         <ul class="flex flex-col gap-4 pt-4">
-            <li><a href="#books" @click="mobileOpen = false" class="text-sm font-semibold uppercase tracking-wider text-foreground/70 transition-colors hover:text-primary">Books</a></li>
-            <li><a href="#videos" @click="mobileOpen = false" class="text-sm font-semibold uppercase tracking-wider text-foreground/70 transition-colors hover:text-primary">Videos</a></li>
-            <li><a href="#about-marc" @click="mobileOpen = false" class="text-sm font-semibold uppercase tracking-wider text-foreground/70 transition-colors hover:text-primary">About Marc</a></li>
-            <li><a href="#testimonials" @click="mobileOpen = false" class="text-sm font-semibold uppercase tracking-wider text-foreground/70 transition-colors hover:text-primary">Testimonials</a></li>
-            <li><a href="#subscribe" @click="mobileOpen = false" class="inline-flex w-full items-center justify-center bg-primary py-2.5 text-xs font-bold uppercase tracking-[0.15em] text-primary-foreground hover:bg-gold-light">Subscribe</a></li>
+            <li><a href="{{ route('books') }}" @click="mobileOpen = false" class="text-sm font-semibold uppercase tracking-wider text-foreground/70 transition-colors hover:text-primary">Books</a></li>
+            <li><a href="{{ route('videos') }}" @click="mobileOpen = false" class="text-sm font-semibold uppercase tracking-wider text-foreground/70 transition-colors hover:text-primary">Videos</a></li>
+            <li><a href="{{ route('book') }}" @click="mobileOpen = false" class="text-sm font-semibold uppercase tracking-wider text-foreground/70 transition-colors hover:text-primary">Book Marc</a></li>
+            <li><a href="{{ route('home') }}#free-guide" @click="mobileOpen = false" class="text-sm font-semibold uppercase tracking-wider text-foreground/70 transition-colors hover:text-primary">Free Guide</a></li>
+            <li><a href="{{ route('home') }}#free-guide" @click="mobileOpen = false" class="inline-flex w-full items-center justify-center bg-primary py-2.5 text-xs font-bold uppercase tracking-[0.15em] text-primary-foreground hover:bg-gold-light">Get Guide</a></li>
         </ul>
     </div>
 </header>

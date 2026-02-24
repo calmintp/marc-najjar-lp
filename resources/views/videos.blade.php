@@ -44,13 +44,13 @@
 
             <div class="mt-20 rounded-2xl border border-border/50 bg-card p-10 text-center lg:p-16">
                 <h2 class="mb-3 font-serif text-2xl font-bold text-foreground lg:text-3xl text-balance">
-                    More Content <span class="text-primary">Coming Soon</span>
+                    Need Marc for Your Event?
                 </h2>
                 <p class="mx-auto max-w-xl leading-relaxed text-muted-foreground">
-                    Marc is constantly creating new content to help you on your transformation journey. Subscribe to be the first to know when new videos are released.
+                    Whether it's a keynote, workshop or coaching session, Marc is available for speaking engagements. Click below to send us the details.
                 </p>
-                <a href="#" class="mt-6 inline-flex items-center gap-2 rounded-sm bg-primary px-8 py-3 text-sm font-semibold uppercase tracking-wider text-primary-foreground transition-all hover:bg-gold-light">
-                    Subscribe for Updates
+                <a href="{{ route('book') }}" class="mt-6 inline-flex items-center gap-2 rounded-sm bg-primary px-8 py-3 text-sm font-semibold uppercase tracking-wider text-primary-foreground transition-all hover:bg-gold-light">
+                    Book Marc to Speak
                 </a>
             </div>
         </div>

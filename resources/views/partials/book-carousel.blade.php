@@ -14,10 +14,10 @@
                 <div class="flex shrink-0 justify-center">
                     <img src="{{ asset('images/book1-fortunes-in-the-fire.png') }}" alt="Fortunes in the Fire book cover" class="h-auto w-44 rounded-lg shadow-2xl shadow-primary/10 transition-transform duration-300 hover:scale-105 sm:w-52">
                 </div>
-                <div class="flex flex-col gap-3 text-center">
+                <div class="flex flex-col gap-3 text-center flex-1">
                     <h3 class="font-serif text-xl font-bold text-foreground sm:text-2xl">Fortunes in the Fire</h3>
                     <p class="text-xs font-semibold uppercase tracking-wider text-primary">From War-Torn Country to the Hills of Beverly</p>
-                    <p class="text-sm leading-relaxed text-muted-foreground">Through twelve masterfully crafted chapters, Marc Najjar shares his powerful story of transformation, from the ravaged streets of Lebanon to the promise of Beverly Hills, with a perspective that will both captivate and embolden you. Yet, this book is about more than one man's journey. Each chapter is intentionally crafted with reflections, exercises, and mindset-shifting practices that invite you to experience your own breakthroughs.</p>
+                    <p class="text-sm leading-relaxed text-muted-foreground flex-1">Through twelve masterfully crafted chapters, Marc Najjar shares his powerful story of transformation, from the ravaged streets of Lebanon to the promise of Beverly Hills, with a perspective that will both captivate and embolden you. Yet, this book is about more than one man's journey. Each chapter is intentionally crafted with reflections, exercises, and mindset-shifting practices that invite you to experience your own breakthroughs.</p>
                     <div class="mt-3">
                         <a href="#" class="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-bold text-primary-foreground transition-colors hover:bg-gold-light">Buy Now</a>
                     </div>
@@ -29,10 +29,10 @@
                 <div class="flex shrink-0 justify-center">
                     <img src="{{ asset('images/book2-from-poor-immigrant-to-rich-american.png') }}" alt="From Poor Immigrant to Rich American book cover" class="h-auto w-44 rounded-lg shadow-2xl shadow-primary/10 transition-transform duration-300 hover:scale-105 sm:w-52">
                 </div>
-                <div class="flex flex-col gap-3 text-center">
+                <div class="flex flex-col gap-3 text-center flex-1">
                     <h3 class="font-serif text-xl font-bold text-foreground sm:text-2xl">From Poor Immigrant to Rich American</h3>
                     <p class="text-xs font-semibold uppercase tracking-wider text-primary">The Immigrant Mindset</p>
-                    <p class="text-sm leading-relaxed text-muted-foreground">This book is about the real-life journey of a Lebanese immigrant who just escaped the rubble and severe bombings to rewrite his fate. Marc Najjar was a teenager when he first stepped onto the western lands of freedom, the States. He was driven by that opportunity to be in the USA to positively transform his life and the lives of others, beginning with his family.</p>
+                    <p class="text-sm leading-relaxed text-muted-foreground flex-1">This book is about the real-life journey of a Lebanese immigrant who just escaped the rubble and severe bombings to rewrite his fate. Marc Najjar was a teenager when he first stepped onto the western lands of freedom, the States. He was driven by that opportunity to be in the USA to positively transform his life and the lives of others, beginning with his family.</p>
                     <div class="mt-3">
                         <a href="#" class="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-bold text-primary-foreground transition-colors hover:bg-gold-light">Buy Now</a>
                     </div>
