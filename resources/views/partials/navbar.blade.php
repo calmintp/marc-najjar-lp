@@ -1,16 +1,17 @@
 <header class="fixed top-0 left-0 right-0 z-50 border-b border-border/20 bg-background/90 backdrop-blur-md" x-data="{ mobileOpen: false }">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-8">
         {{-- Logo --}}
-        <a href="{{ route('home') }}" class="flex items-center gap-3">
+        <a href="{{ route('home') }}#hero" class="flex items-center gap-3">
             <img src="{{ asset('images/logo-marc.png') }}" alt="Marc Najjar MN monogram logo" class="h-10 w-auto">
             MARC NAJJAR
         </a>
 
         {{-- Desktop nav --}}
         <ul class="hidden items-center gap-8 md:flex">
-            <li><a href="{{ route('books') }}" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Books</a></li>
-            <li><a href="{{ route('videos') }}" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Videos</a></li>
-            <li><a href="{{ route('book') }}" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Book Marc</a></li>
+            <li><a href="{{ route('home') }}#socials" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Socials</a></li>
+            <li><a href="{{ route('home') }}#mybooks" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Books</a></li>
+            <li><a href="{{ route('home') }}#videos" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Videos</a></li>
+            <li><a href="{{ route('home') }}#about-marc" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">About Marc</a></li>
             <li><a href="{{ route('home') }}#free-guide" class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground/70 transition-colors hover:text-primary">Free Guide</a></li>
         </ul>
 

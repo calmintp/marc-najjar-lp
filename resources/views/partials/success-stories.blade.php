@@ -11,7 +11,7 @@
             {{-- Video Thumbnail --}}
             <div class="w-full lg:w-3/5">
                 <button @click="lightboxOpen = true" class="group relative block w-full overflow-hidden rounded-2xl border border-border/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-label="Play featured video">
-                    <img src="{{ asset('images/story-1.jpg') }}" alt="Marc Najjar speaking on mindset transformation" class="aspect-video w-full object-cover brightness-75 transition-all duration-500 group-hover:brightness-50 group-hover:scale-105">
+                    <img src="{{ asset('images/video-1.png') }}" alt="Marc Najjar speaking on mindset transformation" class="aspect-video w-full object-cover brightness-75 transition-all duration-500 group-hover:brightness-50 group-hover:scale-105">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="flex size-16 items-center justify-center rounded-full border-2 border-primary bg-primary/20 text-primary backdrop-blur-sm transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/40 sm:size-20">
                             <svg class="size-6 fill-primary sm:size-8" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -52,7 +52,7 @@
             <div class="w-full max-w-4xl px-4" @click.stop>
                 <div class="relative aspect-video w-full overflow-hidden rounded-xl">
                     <template x-if="lightboxOpen">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="Marc Najjar - Change Your Mindset" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute inset-0 h-full w-full"></iframe>
+                        <iframe src="https://www.youtube.com/embed/lLZFvqc3G_I?autoplay=1" title="Marc Najjar - Change Your Mindset" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute inset-0 h-full w-full"></iframe>
                     </template>
                 </div>
             </div>

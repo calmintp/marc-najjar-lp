@@ -1,4 +1,4 @@
-<section x-data="{ videoOpen: false }" class="relative flex min-h-screen items-center overflow-hidden pt-20">
+<section id="hero" x-data="{ videoOpen: false }" class="relative flex min-h-screen items-center overflow-hidden pt-20">
     {{-- Background image - B&W, low opacity --}}
     <div class="absolute inset-0">
     <img 

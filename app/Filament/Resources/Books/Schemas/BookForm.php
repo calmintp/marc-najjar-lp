@@ -24,6 +24,9 @@ class BookForm
                     ->required(),
                 FileUpload::make('image')
                     ->image()
+                    ->disk('public')    
+                    ->directory('books')
+                    ->visibility('public')
                     ->required(),
                 Toggle::make('is_best_seller')
                     ->required(),

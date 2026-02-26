@@ -23,6 +23,9 @@ class BooksTable
                 TextColumn::make('amazon_link')
                     ->searchable(),
                 ImageColumn::make('image'),
+                 ImageColumn::make('image')
+                    ->label('Cover')
+                    ->disk('public'),
                 IconColumn::make('is_best_seller')
                     ->boolean(),
                 TextColumn::make('position')

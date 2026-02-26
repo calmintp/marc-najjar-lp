@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Book;
 
 class PageController extends Controller
 {
@@ -12,8 +13,11 @@ class PageController extends Controller
     }
 
     public function books()
-    {
-        return view('books');
+
+    {   
+        $books = Book::orderBy('position')->get();
+
+        return view('books', compact('books'));
     }
 
     public function videos()

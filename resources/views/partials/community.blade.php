@@ -1,4 +1,4 @@
-<section class="relative border-y border-primary/20 bg-card py-16 lg:py-20">
+<section id="socials" class="relative border-y border-primary/20 bg-card py-16 lg:py-20">
     {{-- Subtle gold glow at top --}}
     <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
 

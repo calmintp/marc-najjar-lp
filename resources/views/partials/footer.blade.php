@@ -14,8 +14,8 @@
 
             {{-- Links --}}
             <div class="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-                <a href="#books" class="transition-colors hover:text-primary">Books</a>
-                <a href="#about" class="transition-colors hover:text-primary">About</a>
+                <a href="#mybooks" class="transition-colors hover:text-primary">Books</a>
+                <a href="#about" class="transition-colors hover:text-primary">Why you need Marc</a>
                 <a href="#about-marc" class="transition-colors hover:text-primary">Marc Najjar</a>
                 <a href="#testimonials" class="transition-colors hover:text-primary">Testimonials</a>
             </div>
