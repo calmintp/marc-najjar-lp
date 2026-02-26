@@ -1,7 +1,7 @@
 <header class="fixed top-0 left-0 right-0 z-50 border-b border-border/20 bg-background/90 backdrop-blur-md" x-data="{ mobileOpen: false }">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-8">
         {{-- Logo --}}
-        <a href="#" class="flex items-center gap-3">
+        <a href="{{ route('home') }}" class="flex items-center gap-3">
             <img src="{{ asset('images/logo-marc.png') }}" alt="Marc Najjar MN monogram logo" class="h-10 w-auto">
             MARC NAJJAR
         </a>
@@ -15,7 +15,7 @@
         </ul>
 
         <div class="hidden md:block">
-            <a href="{{ route('home') }}#free-guide" class="inline-flex items-center justify-center bg-primary px-6 py-2.5 text-xs font-bold uppercase tracking-[0.15em] text-primary-foreground transition-colors hover:bg-gold-light">Get Guide</a>
+            <a href="{{ route('book') }}" class="inline-flex items-center justify-center bg-primary px-6 py-2.5 text-xs font-bold uppercase tracking-[0.15em] text-primary-foreground transition-colors hover:bg-gold-light">Book Marc to Speak</a>
         </div>
 
         {{-- Mobile toggle --}}
