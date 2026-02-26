@@ -17,7 +17,7 @@
             @csrf
             <input type="email" name="email" placeholder="Enter your email" required
                 class="flex-1 rounded-full border border-border bg-card px-5 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" value="{{ old('email') }}">
-            <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition-colors hover:bg-gold-light">
+            <button type="submit" class="inline-flex items-center justify-center whitespace-nowrap gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition-colors hover:bg-gold-light">
                 Send Me the Guide
                 <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>

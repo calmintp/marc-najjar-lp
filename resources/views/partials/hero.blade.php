@@ -38,10 +38,10 @@
             </p>
 
             <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-                <a href="{{ route('book') }}" class="inline-flex items-center justify-center bg-primary px-10 py-4 text-base font-bold uppercase tracking-wider text-primary-foreground transition-colors hover:bg-gold-light">
+                <a href="{{ route('book') }}" class="inline-flex items-center justify-center whitespace-nowrap bg-primary px-10 py-4 text-base font-bold uppercase tracking-wider text-primary-foreground transition-colors hover:bg-gold-light">
                     Book Marc to Speak
                 </a> 
-                <a href="{{ route('home') }}#free-guide" class="inline-flex items-center justify-center border-2 border-foreground/30 bg-transparent px-10 py-4 text-base font-bold uppercase tracking-wider text-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary">
+                <a href="{{ route('home') }}#free-guide" class="inline-flex items-center justify-center whitespace-nowrap border-2 border-foreground/30 bg-transparent px-10 py-4 text-base font-bold uppercase tracking-wider text-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary">
                     free mindset guide
                 </a>
             </div>
