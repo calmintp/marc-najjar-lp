@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Book;
 use App\Models\Video;
+use App\Models\SpeakingRequest;
 
 class PageController extends Controller
 {
@@ -33,18 +34,24 @@ class PageController extends Controller
         return view('book-marc');
     }
 
+    //Booking and free guide form submissions
     public function bookSubmit(Request $request)
     {
-        $data = $request->validate([
-            'fullname' => 'required|string|max:255',
-            'email' => 'required|email',
-            'subject' => 'required|string|max:255',
-            'message' => 'required|string',
+         $data = $request->validate([
+        'fullname' => 'required|string|max:255',
+        'email' => 'required|email',
+        'subject' => 'required|string|max:255',
+        'message' => 'required|string',
+    ]);
+
+        SpeakingRequest::create([
+            'name' => $data['fullname'],
+            'email' => $data['email'],
+            'subject' => $data['subject'],
+            'message' => $data['message'],
         ]);
 
-        // TODO: send email or store request in database.
-        // For now, we'll just flash a success message.
-        return back()->with('status', 'Thank you for reaching out! Marc will review your request and be in touch soon.');
+        return back()->with('status', 'Thank you! Your request was sent successfully.');
     }
 
     public function freeGuideSubmit(Request $request)
