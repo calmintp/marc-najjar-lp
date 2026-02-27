@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Filament\Resources\SpeakingRequests;
-
-use App\Filament\Resources\SpeakingRequests\Pages\CreateSpeakingRequest;
 use App\Filament\Resources\SpeakingRequests\Pages\EditSpeakingRequest;
 use App\Filament\Resources\SpeakingRequests\Pages\ListSpeakingRequests;
 use App\Filament\Resources\SpeakingRequests\Schemas\SpeakingRequestForm;
@@ -43,7 +41,6 @@ class SpeakingRequestResource extends Resource
     {
         return [
             'index' => ListSpeakingRequests::route('/'),
-            //'create' => CreateSpeakingRequest::route('/create'),
             'edit' => EditSpeakingRequest::route('/{record}/edit'),
         ];
     }
