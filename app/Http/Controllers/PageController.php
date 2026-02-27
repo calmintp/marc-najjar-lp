@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Book;
+use App\Models\Video;
 
 class PageController extends Controller
 {
@@ -22,7 +23,9 @@ class PageController extends Controller
 
     public function videos()
     {
-        return view('videos');
+        $videos = Video::latest()->get();
+
+        return view('videos', compact('videos'));
     }
 
     public function book()
