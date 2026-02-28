@@ -16,11 +16,16 @@ RUN apt-get update && apt-get install -y \
     sqlite3 \
     libsqlite3-dev \
     libzip-dev \
+    libicu-dev \
     zip \
     unzip \
     git \
     curl \
-    && docker-php-ext-install pdo pdo_sqlite zip \
+    && docker-php-ext-install \
+        pdo \
+        pdo_sqlite \
+        zip \
+        intl \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Instalar Composer
@@ -47,5 +52,4 @@ COPY docker/nginx.conf /etc/nginx/sites-available/default
 
 EXPOSE 80
 
-RUN php artisan storage:link
-CMD service nginx start && php-fpm
+CMD ["sh", "-c", "service nginx start && php-fpm"]
