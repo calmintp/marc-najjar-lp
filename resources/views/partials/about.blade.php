@@ -48,7 +48,7 @@
                         <p class="text-sm text-muted-foreground">Years Experience</p>
                     </div>
                     <div>
-                        <p class="font-serif text-3xl font-bold text-primary">3</p>
+                        <p class="font-serif text-3xl font-bold text-primary">2</p>
                         <p class="text-sm text-muted-foreground">Bestselling Books</p>
                     </div>
                 </div>

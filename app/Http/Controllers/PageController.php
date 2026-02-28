@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Book;
 use App\Models\Video;
 use App\Models\SpeakingRequest;
+use App\Models\Subscriber;
 
 class PageController extends Controller
 {
@@ -39,7 +40,7 @@ class PageController extends Controller
     {
          $data = $request->validate([
         'fullname' => 'required|string|max:255',
-        'email' => 'required|email',
+        'email' => 'required|email:rfc,dns|max:255',
         'subject' => 'required|string|max:255',
         'message' => 'required|string',
     ]);
@@ -51,16 +52,23 @@ class PageController extends Controller
             'message' => $data['message'],
         ]);
 
-        return back()->with('status', 'Thank you! Your request was sent successfully.');
+        return back()
+        ->with('status', 'Thank you! Your request was sent successfully.');
     }
 
     public function freeGuideSubmit(Request $request)
     {
         $data = $request->validate([
-            'email' => 'required|email',
+        'email' => 'required|email:rfc,dns|max:255',
         ]);
 
-        // TODO: enqueue lead for the free guide delivery (PDF/video etc.)
-        return back()->with('status', 'Thanks! We\'ll send your free mindset guide shortly.');
+        Subscriber::firstOrCreate([
+            'email' => $data['email'],
+        ]);
+
+        return redirect()
+        ->route('home')
+        ->with('status', 'Guide sent successfully!')
+        ->withFragment('free-guide');;
     }
 }

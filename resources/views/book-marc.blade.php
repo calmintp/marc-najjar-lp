@@ -33,8 +33,15 @@
 
                 <div>
                     <label for="email" class="block text-sm font-medium text-foreground">Email Address</label>
-                    <input type="email" name="email" id="email" required
-                        class="mt-1 block w-full rounded-md border border-border bg-card px-4 py-2 text-sm text-foreground focus:border-primary focus:ring-primary" value="{{ old('email') }}">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        required
+                        pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                        title="Please enter a valid email address"
+                        class="mt-1 block w-full rounded-md border border-border bg-card px-4 py-2 text-sm text-foreground focus:border-primary focus:ring-primary"
+                        value="{{ old('email') }}">
                     @error('email')<p class="mt-1 text-xs text-red-600">{{ $message }}</p>@enderror
                 </div>
 
