@@ -19,7 +19,7 @@
                     <p class="text-xs font-semibold uppercase tracking-wider text-primary">From War-Torn Country to the Hills of Beverly</p>
                     <p class="text-sm leading-relaxed text-muted-foreground flex-1">Through twelve masterfully crafted chapters, Marc Najjar shares his powerful story of transformation, from the ravaged streets of Lebanon to the promise of Beverly Hills, with a perspective that will both captivate and embolden you. Yet, this book is about more than one man's journey. Each chapter is intentionally crafted with reflections, exercises, and mindset-shifting practices that invite you to experience your own breakthroughs.</p>
                     <div class="mt-3">
-                        <a href="#" class="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-bold text-primary-foreground transition-colors hover:bg-gold-light">Buy Now</a>
+                        <a href="https://a.co/d/04oqLHXb" target="_blank" class="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-bold text-primary-foreground transition-colors hover:bg-gold-light">Buy Now</a>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                     <p class="text-xs font-semibold uppercase tracking-wider text-primary">The Immigrant Mindset</p>
                     <p class="text-sm leading-relaxed text-muted-foreground flex-1">This book is about the real-life journey of a Lebanese immigrant who just escaped the rubble and severe bombings to rewrite his fate. Marc Najjar was a teenager when he first stepped onto the western lands of freedom, the States. He was driven by that opportunity to be in the USA to positively transform his life and the lives of others, beginning with his family.</p>
                     <div class="mt-3">
-                        <a href="#" class="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-bold text-primary-foreground transition-colors hover:bg-gold-light">Buy Now</a>
+                        <a href="https://a.co/d/05xIEtpZ" target="_blank" class="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-bold text-primary-foreground transition-colors hover:bg-gold-light">Buy Now</a>
                     </div>
                 </div>
             </div>

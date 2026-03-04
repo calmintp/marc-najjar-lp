@@ -1,59 +1,229 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Marc Najjar — Official Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Admin-driven institutional website built with Laravel 12 and Filament 4.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+This project includes:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- 🌐 Public-facing website
+- 🛠️ Filament admin panel
+- 📚 CRUD management (Books, Videos, Speaking Requests, Subscribers)
+- 📊 Custom dashboard with stats widgets
+- 🔐 Profile-based password management
+- 🐳 Containerized development with DevContainers
+- 🗄️ SQLite database (no MySQL)
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🧱 Tech Stack
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![Laravel](https://img.shields.io/badge/Laravel-12-red?logo=laravel)
+![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?logo=php&logoColor=white)
+![Filament](https://img.shields.io/badge/Filament-4-orange)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38B2AC?logo=tailwind-css&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-BuildTool-646CFF?logo=vite&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-DevContainer-2496ED?logo=docker&logoColor=white)
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🐳 Development Setup (DevContainers)
 
-### Premium Partners
+This project runs fully inside a Docker-based DevContainer.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### ✅ Requirements
 
-## Contributing
+- Docker Desktop
+- Visual Studio Code
+- Dev Containers extension (Microsoft)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 1️⃣ Open in DevContainer
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Open the project in VSCode.
 
-## Security Vulnerabilities
+When prompted, click:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+**Reopen in Container**
 
-## License
+Or manually via:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Command Palette → Dev Containers: Reopen in Container
+
+Docker will automatically:
+
+- Build the PHP container
+- Configure SQLite
+- Install required extensions
+
+---
+
+## 2️⃣ Install Dependencies
+
+Inside the container terminal:
+
+    composer install
+    npm install
+
+---
+
+## 3️⃣ Environment Setup
+
+Copy environment file:
+
+    cp .env.example .env
+
+Generate application key:
+
+    php artisan key:generate
+
+---
+
+## 4️⃣ Database Setup (SQLite)
+
+The project uses SQLite.
+
+Ensure the database file exists:
+
+    touch database/database.sqlite
+
+Make sure `.env` contains:
+
+    DB_CONNECTION=sqlite
+    DB_DATABASE=/workspace/database/database.sqlite
+
+Run migrations and seeders:
+
+    php artisan migrate --seed
+
+---
+
+## 5️⃣ Run Frontend Assets
+
+    npm run dev
+
+---
+
+## 6️⃣ Access the Application
+
+Public website:  
+http://localhost
+
+Admin panel:  
+http://localhost/admin
+
+---
+
+## 🔐 Default Admin Access
+
+An admin user is created via seeder.
+
+If you need to manually create one:
+
+    php artisan tinker
+
+Then:
+
+    \App\Models\User::create([
+        'name' => 'Admin',
+        'email' => 'admin@admin.com',
+        'password' => bcrypt('password'),
+    ]);
+
+---
+
+## 🆘 Reset Admin Password (Emergency)
+
+If credentials are lost:
+
+    php artisan tinker
+
+Then:
+
+    $user = \App\Models\User::first();
+    $user->password = bcrypt('newpassword');
+    $user->save();
+
+---
+
+## 🏗️ Production Build
+
+Build optimized frontend assets:
+
+    npm run build
+
+Optimize Laravel:
+
+    php artisan optimize
+
+Ensure:
+
+- APP_ENV=production
+- APP_DEBUG=false
+- Storage is linked
+
+    php artisan storage:link
+
+---
+
+## 📁 Project Structure
+
+    app/
+        Filament/
+        Models/
+
+    resources/
+        views/
+
+    routes/
+
+    database/
+        migrations/
+        seeders/
+        database.sqlite
+
+    .devcontainer/
+    docker-compose.yml
+
+---
+
+## 🛠️ Useful Artisan Commands
+
+Run migrations:
+
+    php artisan migrate
+
+Rollback:
+
+    php artisan migrate:rollback
+
+Clear caches:
+
+    php artisan optimize:clear
+
+---
+
+## 🎛️ Admin Panel
+
+Built with Filament 4.
+
+Includes:
+
+- Custom dashboard with stats widgets
+- Profile management (change password)
+- Sidebar customization
+- CRUD management for:
+    - Books
+    - Videos
+    - Speaking Requests
+    - Subscribers
+
+---
+
+## 📄 License
+
+Private project. All rights reserved.
