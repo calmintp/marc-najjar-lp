@@ -1,0 +1,9 @@
+/* Reduz largura da sidebar */
+.fi-sidebar {
+    width: 220px !important;
+}
+
+/* Ajusta área principal */
+.fi-main {
+    margin-left: 220px !important;
+}
