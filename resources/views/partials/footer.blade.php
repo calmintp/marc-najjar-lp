@@ -14,10 +14,10 @@
 
             {{-- Links --}}
             <div class="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-                <a href="#mybooks" class="transition-colors hover:text-primary">Books</a>
-                <a href="#about" class="transition-colors hover:text-primary">Why you need Marc</a>
-                <a href="#about-marc" class="transition-colors hover:text-primary">Marc Najjar</a>
-                <a href="#testimonials" class="transition-colors hover:text-primary">Testimonials</a>
+                <a href="{{ route('home') }}#mybooks" class="transition-colors hover:text-primary">Books</a>
+                <a href="{{ route('home') }}#about" class="transition-colors hover:text-primary">Why you need Marc</a>
+                <a href="{{ route('home') }}#about-marc" class="transition-colors hover:text-primary">Marc Najjar</a>
+                <a href="{{ route('home') }}#testimonials" class="transition-colors hover:text-primary">Testimonials</a>
             </div>
 
             {{-- Social + CTA --}}
