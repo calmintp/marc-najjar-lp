@@ -12,6 +12,7 @@ use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
+use App\Livewire\StatsOverview;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -29,6 +30,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->profile()
             ->colors([
                 'primary' => Color::Gray,
             ])
@@ -39,9 +41,17 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
-                AccountWidget::class,
-                FilamentInfoWidget::class,
+                //AccountWidget::class,
+                //FilamentInfoWidget::class,
+                StatsOverview::class,
             ])
+            ->renderHook(
+                'panels::styles.after',
+                fn (): string => '<style>
+                    .fi-sidebar { width: 250px !important; }
+                    .fi-main { margin-left: 50px !important; }
+                </style>'
+            )   
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
