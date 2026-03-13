@@ -50,6 +50,6 @@ RUN mkdir -p storage bootstrap/cache database \
 # Nginx config
 COPY docker/nginx.conf /etc/nginx/sites-available/default
 
-EXPOSE 80
+EXPOSE 8001
 
 CMD ["sh", "-c", "service nginx start && php-fpm"]
