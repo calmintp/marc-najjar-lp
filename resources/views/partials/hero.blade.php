@@ -4,12 +4,12 @@
     <img 
         src="{{ asset('images/hero-background.webp') }}" 
         class="absolute inset-0 h-full w-full object-cover grayscale">
-    <div class="absolute inset-0 bg-black/90"></div>
+    <div class="absolute inset-0 bg-black/50"></div>
     </div>
     {{-- Subtle gold radial glow --}}
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,_rgba(201,168,76,0.05)_0%,_transparent_70%)]"></div>
 
-    <div class="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center gap-10 px-6 lg:flex-row lg:gap-16 lg:px-8">
+    <div class="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center gap-10 px-6 lg:ml-12 lg:flex-row lg:gap-16 lg:px-8">
         {{-- Left content --}}
         <div class="flex flex-1 flex-col items-center text-center lg:items-start lg:text-left">
             <h1 class="font-serif text-6xl font-bold uppercase leading-[0.95] tracking-wide text-primary sm:text-7xl md:text-8xl lg:text-9xl">
@@ -19,7 +19,7 @@
             <div class="my-6 h-px w-64 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent lg:w-80"></div>
 
             <p class="text-sm font-medium uppercase tracking-[0.25em] text-foreground/60 sm:text-base">
-                Motivational Speaker | Author | Mindset Strategist
+                Motivational Speaker | Author | Mindset Expert
             </p>
 
             <h2 class="mt-10 font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">
@@ -47,20 +47,8 @@
             </div>
         </div>
 
-        {{-- Right - Circle portrait --}}
-        <div class="relative flex flex-1 items-center justify-center lg:justify-end">
-            {{-- Subtle glow --}}
-            <div class="absolute h-56 w-56 rounded-full bg-primary/[0.08] blur-3xl sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96"></div>
-
-            {{-- Gold gradient ring --}}
-            <div class="relative h-48 w-48 rounded-full p-[3px] sm:h-64 sm:w-64 md:h-72 md:w-72 lg:h-96 lg:w-96"
-                style="background: linear-gradient(135deg, rgba(201,168,76,0.6) 0%, rgba(201,168,76,0.15) 40%, rgba(201,168,76,0.05) 60%, rgba(201,168,76,0.4) 100%);">
-                <div class="h-full w-full overflow-hidden rounded-full bg-charcoal">
-                    <img src="{{ asset('images/hero-marc2.png') }}" alt="Marc Najjar" class="h-full w-full object-cover object-top grayscale">
-                </div>
-            </div>
-        </div>
     </div>
+
 
     {{-- Video Lightbox --}}
     <div x-show="videoOpen"
@@ -93,5 +81,4 @@
                 </iframe>
             </template>
         </div>
-    </div>
 </section>
