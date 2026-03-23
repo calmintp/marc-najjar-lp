@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0a0a0a">
-    <title>@yield('title', 'Marc Najjar | Mind Power 24H')</title>
+    <title>@yield('title', 'Marc Najjar |Unlock the Power Within You.')</title>
     <meta name="description" content="@yield('description', 'Transform your mindset, transform your life. Business strategist, life coach, and bestselling author Marc Najjar empowers you to ignite your inner fire.')">
 
     {{-- Favicons --}}
-    <link rel="icon" href="{{ asset('icon-light-32x32.png') }}" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="{{ asset('icon-dark-32x32.png') }}" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="{{ asset('icon.svg') }}" type="image/svg+xml">
+   {{-- Favicons --}}
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('icon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('icon-16x16.png') }}">
     <link rel="apple-touch-icon" href="{{ asset('apple-icon.png') }}">
 
     {{-- Fonts --}}
