@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0a0a0a">
-    <title>@yield('title', 'Marc Najjar |Unlock the Power Within You.')</title>
+    <title>@yield('title', 'Marc Najjar')</title>
     <meta name="description" content="@yield('description', 'Transform your mindset, transform your life. Business strategist, life coach, and bestselling author Marc Najjar empowers you to ignite your inner fire.')">
 
     {{-- Favicons --}}
